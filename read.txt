@@ -1,0 +1,24 @@
+Notes:
+
+
+the real-time chat application does not save your chat messages in the database before passing it to other client.
+
+
+
+Why do we need Redis? When real-time chat does not need databases like mySQL, postgreSQL, it does not mean it never save the message. It uses message broker database like Redis to save the messages in a First-in-First-Out (“FIFO”) queue before sending them.
+
+
+
+install rest_framework...
+	pip install djangorestframework
+	pip install markdown       # Markdown support for the browsable API.
+	pip install django-filter  # Filtering support
+
+
+install channels:
+	python3 -m pip install -U channels
+
+
+------------
+read :   1.channel_layers 
+		 2. Redis server
