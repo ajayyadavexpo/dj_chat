@@ -22,3 +22,11 @@ install channels:
 ------------
 read :   1.channel_layers 
 		 2. Redis server
+-----------------------------------------------------
+Django channels consist of three components
+	1. Interface servers : which handel requests (WSGI and ASGI) and put them in a queue.
+	2. Channels is a - first in first out queue. 
+	3. workers - monitors channels and handel requests.
+	
+Redis :
+	

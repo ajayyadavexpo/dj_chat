@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-redis_host = "127.0.0.1:8000"
+redis_host = os.environ.get('REDIS_HOST', 'localhost')
+
 
 # Application definition
 
@@ -79,7 +80,7 @@ CHANNEL_LAYERS = {
             'CONFIG': {
                 'hosts': [(redis_host, 6379)],
             },
-        'ROUTING':'routing.application',
+        'ROUTING': "chat_app.routing.channel_routing",
    },
 }
 
