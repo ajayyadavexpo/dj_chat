@@ -29,4 +29,12 @@ Django channels consist of three components
 	3. workers - monitors channels and handel requests.
 	
 Redis :
-	
+
+
+
+daphne,channels,asgiref,asgi-redis
+
+django-redis-4.11.0
+asgiref-3.2.7
+websocket-client) (1.14.0)
+

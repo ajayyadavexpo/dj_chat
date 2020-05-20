@@ -141,4 +141,4 @@ STATIC_URL = '/static/'
 
 
 
-ASGI_APPLICATION = 'routing.application'
+ASGI_APPLICATION = "dj_chat.routing.application"
