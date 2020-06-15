@@ -1,6 +1,5 @@
 Notes:
 
-
 the real-time chat application does not save your chat messages in the database before passing it to other client.
 
 
