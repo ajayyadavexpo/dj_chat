@@ -1,1 +1,1 @@
-# dj_chat
+# dj_chat app
